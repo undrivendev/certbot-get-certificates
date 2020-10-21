@@ -10,6 +10,7 @@ Just pass the list of domains you want to obtain a certificate for as command li
 `./certbot-get-certificates.py testdomain.com ciao.testdomain.com www.testdomain2.com`
 
 ## Notes
+- you need to free port 80 to use the `standalone` mode
 - This script saves the obtained certificates in the `./certbot/conf/` folder
 - For every second level domain passed as command line argument, a single certificate containing the second level domain and the `www` third level domain will be created.
 
